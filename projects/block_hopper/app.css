@@ -1,0 +1,29 @@
+#title{
+    display:block;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hide{
+    display:none;
+}
+
+canvas {
+    width: 600px;
+    height:400px;
+    background-color: rgb(180, 255, 255);
+    border: 2px solid grey;
+}
+#canvas {
+    width: 600px;
+    height:400px;
+    background-color: rgb(180, 255, 255);
+    border: 2px solid grey;
+    text-align: center;
+}
