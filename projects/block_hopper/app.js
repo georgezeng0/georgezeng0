@@ -1,5 +1,4 @@
 //Variables
-let gameState = false;
 const canvasWidth = 600;
 const canvasHeight = 400;
 
@@ -26,7 +25,6 @@ class Canvas {
         this.context = this.canvas.getContext('2d');
     }
 }
-const gameCanvas = new Canvas(canvasHeight, canvasWidth);
 
 //Player
 class Player {
@@ -77,15 +75,27 @@ class Score {
     }
 }
 
+//Initialise objects
+let player = new Player(playerWidth, playerHeight, playerX, playerY);
+let score = new Score();
+const gameCanvas = new Canvas(canvasHeight, canvasWidth);
+let context = gameCanvas.context;
+context.font = "25px Marker Felt";
+context.fillStyle = "black";
+context.fillText(`Press Any Key To Start`, 180, 100);
+context.fillText(`<space> to JUMP`, 200, 200);
+let heading = document.getElementById('title');
+heading.insertAdjacentElement('afterend', gameCanvas.canvas)
+
 //Functions
 const startGame = function () {
+    body.removeEventListener('keydown', startGame);
     initCanvas();
     setInterval(updateCanvas, updateInterval);
 }
 
 const updateCanvas = function () {
-    ctx = gameCanvas.context;
-    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+    context.clearRect(0, 0, canvasWidth, canvasHeight);
 
     if (player.alive) {
         movePlayer();
@@ -94,24 +104,16 @@ const updateCanvas = function () {
         initBlocks();
         move_Draw_Blocks(); //ALso has detect collection
     } else {
-        ctx.font = "25px Marker Felt";
-        ctx.fillStyle = "black";
-        ctx.fillText("You Lose! Press R to restart", 100, canvasHeight / 2)
+        context.font = "25px Marker Felt";
+        context.fillStyle = "black";
+        context.fillText("You Lose! Press R to restart", 150, canvasHeight / 2)
     }
-    console.log(score.score);
     score.drawScore();
 
 }
 
 const initCanvas = function () {
-    canvasInitial.innerText = "";
-    canvasInitial.removeEventListener('click', startGame);
-    gameState = true;
-    let heading = document.getElementById('title');
-    heading.insertAdjacentElement('afterend', gameCanvas.canvas)
-    canvasInitial.classList.toggle("hide");
-
-    //Add button listeners
+    //Add button controls
     body.addEventListener('keydown', (e) => {
         if (e.code === "Space") {
             if (!player.jumping) player.jumping = true;
@@ -187,8 +189,8 @@ const detectCollision = function (block) {
     blockTop = block.y;
     blockBottom = block.y - block.height;
 
-    if ((playerRight > blockLeft && playerBottom > blockTop) ||
-        (blockLeft <= 0 && playerLeft < blockRight && playerBottom > blockTop)) {
+    if ((playerRight >= blockLeft && playerBottom >= blockTop) ||
+        (blockLeft <= 0 && playerLeft <= blockRight && playerBottom >= blockTop)) {
         player.alive = false;
     }
 }
@@ -199,14 +201,11 @@ const resetPlayer = function () {
 }
 
 //DOM objects
-let canvasInitial = document.getElementById('canvas');
 let body = document.querySelector("body");
+body.addEventListener('keydown', startGame);
 
-//Initialise
-canvasInitial.innerText = "Click To Start"
-canvasInitial.addEventListener('click', startGame);
-let player = new Player(playerWidth, playerHeight, playerX, playerY);
-let score = new Score();
+
+
 
 
 
