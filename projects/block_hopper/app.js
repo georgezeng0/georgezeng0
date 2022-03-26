@@ -48,7 +48,7 @@ class Player {
 //Block
 class Block {
     constructor() {
-        this.height = Math.floor(20 + Math.random() * 200);
+        this.height = Math.floor(playerHeight + 1 + Math.random() * 150);
         this.width = Math.floor(10 + Math.random() * 50);
         this.speed = 1 + Math.random() * 5;
         this.x = canvasWidth - playerWidth;
