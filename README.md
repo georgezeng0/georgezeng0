@@ -1,6 +1,8 @@
 # Public Projects
 
-## Block Hopper [Link](https://georgezeng0.github.io/block_hopper/)
+## Block Hopper 
+[Repo](https://github.com/georgezeng0/block-jumper)
+[Live Demo](https://georgezeng0.github.io/block-jumper/)
 
 A simple game built using javascript.
 
