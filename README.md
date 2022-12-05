@@ -10,5 +10,8 @@ A simple game built using javascript.
 
 A full stack web application where users can view, review restaurants and order dishes from them. Built using Node, Express, PostgreSQL, React.
 
+## RoteMate - Flashcard and chatroom app
+[Repo](https://github.com/georgezeng0/social_study_app) | [Live Demo](https://rote-mate.herokuapp.com/)
 
+A full stack web applications where users can create and view flashcards, with chatrooms. Built using Node, Express, MongoDB, React, socketIO.
 
