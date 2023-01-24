@@ -8,7 +8,7 @@ Greetings! Here are some of my projects whilst learning web development and data
 
 An interactive Data Visualisaiton Project for the World Goverment Summit's World Data Visualisaiton Prize 2023. Built using React, R, plotly.js
 
-[Repo](https://github.com/georgezeng0/world-data-visualisation-prize-2023)[Live Demo[(https://health-spend-dashboard.netlify.app/)
+[Repo](https://github.com/georgezeng0/world-data-visualisation-prize-2023) | [Live Demo[(https://health-spend-dashboard.netlify.app/)
 
 # Web and JavaScript Projects
 
