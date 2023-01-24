@@ -12,11 +12,6 @@ An interactive Data Visualisaiton Project for the World Goverment Summit's World
 
 # Web and JavaScript Projects
 
-## Block Hopper 
-[Repo](https://github.com/georgezeng0/block-jumper) | [Live Demo](https://georgezeng0.github.io/block-jumper/)
-
-A simple game built using javascript.
-
 ## Deliver Eat - Mock food delivery app
 **Live Demo Currently OFFLINE**
 [Repo](https://github.com/georgezeng0/food_delivery_app) | [Live Demo](https://deliver-eat.herokuapp.com/)
