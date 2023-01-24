@@ -10,7 +10,7 @@ An interactive Data Visualisaiton Project for the World Goverment Summit's World
 
 [Repo](https://github.com/georgezeng0/world-data-visualisation-prize-2023) | [Live Demo](https://health-spend-dashboard.netlify.app/)
 
-# Web and JavaScript Projects
+# Web Projects
 
 ## Deliver Eat - Mock food delivery app
 **Live Demo Currently OFFLINE**
