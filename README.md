@@ -13,8 +13,8 @@ An interactive Data Visualisaiton Project for the World Goverment Summit's World
 # Web Projects
 
 ## Deliver Eat - Mock food delivery app
-**Live Demo Currently OFFLINE**
-[Repo](https://github.com/georgezeng0/food_delivery_app) | [Live Demo](https://deliver-eat.herokuapp.com/)
+
+[Repo](https://github.com/georgezeng0/food_delivery_app)
 
 A full stack web application where users can view, review restaurants and order dishes from them. Built using Node, Express, PostgreSQL, React.
 
