@@ -4,6 +4,12 @@ Greetings! Here are some of my projects whilst learning web development and data
 
 # Data Projects
 
+## Visualisation Dashboard - Unsupervised ML (Clustering) of countries based on diagnoses
+
+Interactive shinylive dashboard - visualising countries based on diagnosis statistics using ML clustering.
+
+[Repo](https://github.com/georgezeng0/country_diagnosis_visualisation/) [Live Demo](https://georgezeng0.github.io/country_diagnosis_visualisation/)
+
 ## Global Health Spending Interactive Visualisation
 
 An interactive Data Visualisaiton Project for the World Goverment Summit's World Data Visualisaiton Prize 2023. Built using React, R, plotly.js
