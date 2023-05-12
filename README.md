@@ -8,7 +8,7 @@ Greetings! Here are some of my projects whilst learning web development and data
 
 Interactive shinylive dashboard - visualising countries based on diagnosis statistics using ML clustering.
 
-[Repo](https://github.com/georgezeng0/country_diagnosis_visualisation/) [Live Demo](https://georgezeng0.github.io/country_diagnosis_visualisation/)
+[Repo](https://github.com/georgezeng0/country_diagnosis_visualisation/) | [Live Demo](https://georgezeng0.github.io/country_diagnosis_visualisation/)
 
 ## Global Health Spending Interactive Visualisation
 
